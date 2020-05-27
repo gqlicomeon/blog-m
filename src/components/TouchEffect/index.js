@@ -8,15 +8,15 @@ function TouchEffect(){
 
     const touchesEle = touchesArr.map(val=>{
         let {timestamp,className,style} = val;
-        return (<span key={timestamp} className={className} style={style}></span>)
+        return (<span key={timestamp} className={className} onClick={()=>{console.log("chufa")}} style={style}></span>)
     });
 
     const handler = (e)=>{
         let tagName = e.target.tagName.toLowerCase();
         let parentTagName = e.target.parentNode.tagName.toLowerCase();
-        // if(tagName === "a" || parentTagName === "a"){//防止点击穿透导致a链接无法点击
-        //     return;
-        // }
+        if(tagName === "a" || parentTagName === "a"){//防止点击穿透导致a链接无法点击
+            return;
+        }
         let timestamp = new Date().getTime();
         let {clientX,clientY} = e.touches[0];
         let randomColor = `color${Math.round(Math.random()*14+1)}`;
@@ -42,7 +42,7 @@ function TouchEffect(){
                 });
                 return state.slice();
             })
-        },300)
+        },400)
     }
 
    

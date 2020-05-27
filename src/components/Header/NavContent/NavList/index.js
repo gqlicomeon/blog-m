@@ -1,5 +1,5 @@
-import React from "react";
-import {Link} from "react-router-dom";
+import React, { useEffect } from "react";
+import {Link, useLocation} from "react-router-dom";
 import PropTypes from "prop-types";
 
 import "./index.scss";
@@ -12,7 +12,9 @@ class NavList extends React.PureComponent{
     handler(e){
         let href = e.target.getAttribute("href");
         if(href){
-            this.props.setNavOpen(false);
+            setTimeout(()=>{
+                this.props.setNavOpen(false);
+            },300);
         }
     }
     render(){
