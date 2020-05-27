@@ -18,7 +18,7 @@ class NavList extends React.PureComponent{
     render(){
         return (
             <nav>
-                <ul onTouchEnd={this.handler}>
+                <ul onClick={this.handler}>
                     <li><Link to="/articles">随记</Link></li>
                     <li><Link to="/tags">标签</Link></li>
                     <li><Link to="/archives">归档</Link></li>
