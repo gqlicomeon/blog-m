@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation,Link } from "react-router-dom";
+import { useLocation,Link, useHistory } from "react-router-dom";
 
 import {parseUrlQuery} from "@/util/common";
 
@@ -8,6 +8,7 @@ import "./index.scss";
 
 function RouterContent({children}){
     let {pathname,search} = useLocation();
+    let history = useHistory();
     let titleMap = {
         "articles":"随记",
         "tags":"标签",
@@ -22,7 +23,11 @@ function RouterContent({children}){
     return (
         <main className={pathname !== "/" ? "active" : ""}>
             <div className="top__nav">
-                <Link to="/"><i className="fa fa-home"></i></Link>
+                <div className="nav__btn">
+                    <button className="fa fa-arrow-left" onClick={()=>{history.goBack()}}></button>
+                    <Link to="/"><i className="fa fa-home"></i></Link>
+                </div>
+               
                 <h2>{titleMap[pathname.slice(1)]}</h2>
             </div>
             {children}

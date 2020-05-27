@@ -25,13 +25,23 @@ main{
     top: 0;
     padding: 20px;
     border-bottom: 2px solid #eee;
-    a{
-        font-size: 46px;
-        color: #333;
-        margin: 0 10px;
+    .nav__btn{
         position: absolute;
         left: 20px;
         top: 20px;
+        color: #333;
+        button{
+            font-size: 36px;
+            vertical-align: middle;
+            width: 1em;
+            height: 1em;
+            margin-right: 20px;
+        }
+    }
+    a{
+        font-size: 46px;
+        display: inline-block;
+        vertical-align: middle;
     }
     h2{
         font-size: 32px;
