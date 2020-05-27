@@ -23,12 +23,9 @@ function RouterContent({children}){
     return (
         <main className={pathname !== "/" ? "active" : ""}>
             <div className="top__nav">
-                <div className="nav__btn">
-                    <button className="fa fa-arrow-left" onClick={()=>{history.goBack()}}></button>
-                    <Link to="/"><i className="fa fa-home"></i></Link>
-                </div>
-               
+                <button className="fa fa-arrow-left" onClick={()=>{history.goBack()}}></button>
                 <h2>{titleMap[pathname.slice(1)]}</h2>
+                <Link to="/"><i className="fa fa-home"></i></Link>
             </div>
             {children}
         </main>

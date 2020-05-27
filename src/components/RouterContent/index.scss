@@ -25,22 +25,21 @@ main{
     top: 0;
     padding: 20px;
     border-bottom: 2px solid #eee;
-    .nav__btn{
-        position: absolute;
-        left: 20px;
-        top: 20px;
+    button{
+        font-size: 42px;
+        vertical-align: middle;
+        width: 1em;
+        height: 1em;
         color: #333;
-        button{
-            font-size: 36px;
-            vertical-align: middle;
-            width: 1em;
-            height: 1em;
-            margin-right: 20px;
-        }
+        position: absolute;
+        left: 40px;
+        top: 20px;
     }
     a{
+        position: absolute;
+        right: 40px;
+        top: 20px;
         font-size: 46px;
-        display: inline-block;
         vertical-align: middle;
     }
     h2{
