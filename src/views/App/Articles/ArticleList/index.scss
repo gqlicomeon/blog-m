@@ -1,0 +1,43 @@
+.article__list{
+    padding: 40px 25px 0;
+    li{
+        border-radius: 15px;
+        overflow: hidden;
+        background: rgba(255,255,255,0.9);
+        padding-bottom: 40px;
+        box-shadow: 0 0 10px #ddd;
+        &:not(:last-child){
+            margin-bottom: 40px;
+        }
+        h1{
+          font-size: 32px;
+          padding: 20px 10px;
+          color: #333;
+        }
+        p{
+            padding: 0 10px;
+            color: #444;
+        }
+    }
+    .cover__img{
+        max-height: 250px;
+        min-height: 250px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+}
+.more{
+    text-align: center;
+    padding: 25px;
+    button{
+        background: rgba(255,255,255,0.9);
+        outline: none;
+        font-size: 28px;
+        padding: 10px 0;
+        width: 100%;
+        border-radius: 10px;
+        color: #07dbf7;
+    }
+}

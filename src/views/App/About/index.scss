@@ -1,0 +1,31 @@
+.about{
+    position: relative;
+    padding-top:120px; 
+}
+.about__box{
+    padding: 0 25px;
+    h1{
+        font-size: 52px;
+        color: #333;
+        margin-bottom: 80px;
+    }
+    p{
+        font-size: 32px;
+        color: #909399;
+        margin-bottom: 40px;
+        i{
+            margin-right: 10px;
+        }
+        a{
+            text-decoration: underline;
+        }
+    }
+    .sec{
+        margin-bottom: 150px;
+    }
+    h2{
+        text-align: center;
+        font-size: 80px;
+        color: yellow;
+    }
+}

@@ -1,0 +1,152 @@
+/*
+全局通用样式
+*/
+@charset "utf-8";
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 24px;
+    font-family: "STKaiti", "STSong", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, Arial, sans-serif;
+    overflow: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-size: inherit;
+}
+
+input,button,textarea{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+ol,ul{
+    list-style-type: none;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.color1{
+    color: orange;
+}
+.color2{
+
+    color: orangered;
+}
+
+.color3{
+    color: orchid;
+}
+
+.color4{
+    color: palegoldenrod;
+}
+
+.color5{
+    color: palegreen;
+}
+
+.color6{
+    color: paleturquoise;
+}
+
+.color7{
+    color: palevioletred;
+}
+
+.color8{
+    color: #303133;
+}
+
+.color9{
+    color: #606266;
+}
+.color10{
+    color: #909399;
+}
+
+.color11{
+    color: rgb(112, 216, 181);
+}
+
+.color12{
+    color: rgb(216, 119, 112);
+}
+
+.color13{
+    color: rgb(96, 54, 247);
+}
+
+.color14{
+    color: rgb(252, 227, 0);
+}
+
+.color15{
+    color: rgb(252, 8, 0);
+}
+
+.font1{
+    font-size: 32px;
+}
+
+.font2{
+    font-size: 36px;
+}
+.font3{
+    font-size: 40px;
+}
+
+.font4{
+    font-size: 44px;
+}
+
+.font5{
+    font-size: 48px;
+}
+
+.font6{
+    font-size: 52px;
+}
+
+
+.font7{
+    font-size: 56px;
+}
+
+
+.font8{
+    font-size: 60px;
+}
+
+.font9{
+    font-size: 64px;
+}
+
+.font10{
+    font-size: 68px;
+}
+.hide{
+    display: none;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}

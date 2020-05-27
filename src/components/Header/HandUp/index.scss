@@ -1,0 +1,31 @@
+.hand__up{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    color: #fff;
+    .hand{
+        text-align: center;
+        margin-bottom: 20px;
+        animation: slideUp 1s linear infinite alternate both;
+        i{
+            font-size: 56px;
+        }
+    }
+    p{
+        font-size: 32px;
+        a{
+            padding: 10px;
+            font-weight: bolder;
+        }
+    }
+}
+
+@keyframes slideUp{
+    form{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}

@@ -1,0 +1,95 @@
+.touch__list{
+    z-index: 9999;
+    position: fixed;
+}
+
+.touches{
+    animation: float_top_1 ease-in-out 800ms both;
+}
+
+@keyframes float_top_1{
+    to{
+        left: 0;
+        top: -1em;
+        opacity: 0;
+    }
+}
+
+
+@keyframes float_top_2{
+    to{
+        left: 10vw;
+        top: -1em;
+        opacity: 0;
+    }
+}
+
+
+@keyframes float_top_3{
+    to{
+        left: 20vw;
+        top: -1em;
+        opacity: 0;
+    }
+}
+
+
+@keyframes float_top_4{
+    to{
+        left: 30vw;
+        top: -1em;
+        opacity: 0;
+    }
+}
+
+@keyframes float_top_5{
+    to{
+        left: 40vw;
+        top: -1em;
+        opacity: 0;
+    }
+}
+
+
+@keyframes float_top_6{
+    to{
+        left: 50vw;
+        top: -1em;
+        opacity: 0;
+    }
+}
+
+
+@keyframes float_top_7{
+    to{
+        left: 60vw;
+        top: -1em;
+        opacity: 0;
+    }
+}
+
+@keyframes float_top_8{
+    to{
+        left: 70vw;
+        top: -1em;
+        opacity: 0;
+    }
+}
+
+@keyframes float_top_9{
+    to{
+        left: 90vw;
+        top: -1em;
+        opacity: 0;
+    }
+}
+
+@keyframes float_top_10{
+    to{
+        left: 100vw;
+        top: -1em;
+        opacity: 0;
+    }
+}
+
+
