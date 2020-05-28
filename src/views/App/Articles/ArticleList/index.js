@@ -19,7 +19,7 @@ class ArticleList extends React.PureComponent{
         })
     }
     render() {
-        const listEle = this.props.list.reduce((prev,ele) => {
+        const listEle = this.props.list.sort((a,b)=> b.timestamp - a.timestamp).reduce((prev,ele) => {
             let {title,desc,timestamp,coverImg,isTop} = ele;
             let html = (
                 <li key={timestamp}>
